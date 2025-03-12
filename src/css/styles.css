@@ -175,6 +175,7 @@ body {
   height: auto;
   display: block;
   padding: 20px;
+  z-index: 2;
 }
 
 .title {
@@ -182,7 +183,7 @@ body {
   font-size: 5em;
   color: #8fff00;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .title::before {
@@ -193,6 +194,7 @@ body {
   width: 0;
   height: 2px;
   transition: .9s;
+
 }
 
 .title:hover::before {
@@ -210,16 +212,16 @@ h1:hover {
   height: auto;
   margin: 0 auto;
   padding: 50px;
-  z-index: 1;
+  z-index: 2;
 }
 
-p.content {
+.content {
   color: white;
   font-size: 1.8em;
   text-align: center;
   padding: 120px;
   font-family: sans-serif;
-  z-index: 1;
+  z-index: 3;
 }
 
 /* NEXT SECTION */
@@ -269,11 +271,13 @@ p.content {
 .btn a:hover {
   color: #8fff00;
   transition: .9s;
+  
 }
 
 .next-section h2 {
   font-family: sans-serif;
   margin-bottom: 40px;
+  z-index: 2;
 }
 
 /* GRID DE SERVICES */
